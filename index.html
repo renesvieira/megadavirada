@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bolão Mega da Virada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="titulo">💰 Bolão Mega da Virada 💰</h1>
+  </header>
+
+  <div id="mensagem-inicial">
+    ⏳ Aguardando para ficar milionários! ⏳
+  </div>
+
+  <section class="sorteio">
+    <input
+      type="text"
+      id="input-sorteio"
+      placeholder="Ex: 01 02 03 04 05 06"
+    >
+    <button onclick="liberarSorteio()">Conferir Sorteio</button>
+
+    <div id="contador-premios">
+      <!-- Aqui vão aparecer Quadras, Quinas, Megas e acertos menores -->
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Cartelas</h2>
+    <p id="contador" style="text-align:center;">Carregando cartelas...</p>
+
+    <div class="tabela-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Qtd</th>
+            <th>Números</th>
+            <th>Acertos</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-cartelas"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
